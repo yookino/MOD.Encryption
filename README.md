@@ -2,13 +2,13 @@
 
 
  // Private Key ที่ได้จากตอนลงทะเบียน
-            string privateKey = "";
-            
-            // Token ที่เข้ารหัส
-            string encryptedToken = "";  
+string privateKey = "";
 
-            MOD.Encryption.CryptographyHelper c = new MOD.Encryption.CryptographyHelper(privateKey);
+// Token ที่เข้ารหัส
+string encryptedToken = "";  
 
-            string token = c.Decrypt(encryptedToken);  // ถอดรหัส Token
+MOD.Encryption.CryptographyHelper c = new MOD.Encryption.CryptographyHelper(privateKey);
 
-            Console.WriteLine(token);
+string token = c.Decrypt(encryptedToken);  // ถอดรหัส Token
+
+Console.WriteLine(token);
