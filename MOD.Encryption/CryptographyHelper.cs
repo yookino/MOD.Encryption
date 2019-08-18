@@ -40,7 +40,7 @@ namespace MOD.Encryption
 
             using (var provider = new RSACryptoServiceProvider(keySize))
             {
-                provider.FromXmlString(publicAndPrivateKeyXml);
+                provider.FromXmlStringCore(publicAndPrivateKeyXml);
                 return provider.Decrypt(data, _optimalAsymmetricEncryptionPadding);
             }
         }
